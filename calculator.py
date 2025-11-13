@@ -28,4 +28,3 @@ class Calculator:
         if self.__op2 == 0:
             raise ZeroDivisionError("Nie można dzielić przez zero.")
         return self.__op1 / self.__op2
-
