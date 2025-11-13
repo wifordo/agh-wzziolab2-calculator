@@ -56,3 +56,12 @@ def test_small_values():
     b = 1e-12
     calc = Calculator(a, b)
     assert pytest.approx(calc.sum(), rel=1e-9) == a + b
+
+@pytest.mark.parametrize("a, b, expected", [
+    (2, 3, 5),
+    (-1, -2, -3),
+    (2.5, 3.5, 6.0),
+])
+def test_add_parametrized(a, b, expected):
+    calc = Calculator(a, b)
+    assert pytest.approx(calc.sum(), rel=1e-12) == expected
