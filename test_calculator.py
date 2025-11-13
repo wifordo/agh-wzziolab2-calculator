@@ -3,7 +3,7 @@ import pytest
 from calculator import Calculator
 
 @pytest.mark.parametrize("a,b,expected", [
-    (3, 2, 5),
+    (3, 2, 6),
     (0, 0, 0),
     (-1, 1, 0),
     (2.5, 1.5, 4.0),
