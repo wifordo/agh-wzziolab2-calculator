@@ -341,3 +341,19 @@ pip-selfcheck.json
 
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Git,Python,PyCharm,Windows,JetBrains,VirtualEnv,Coverage
+
+# Ignore compiled python files
+__pycache__/
+*.py[cod]
+
+# Virtualenvs
+.venv/
+venv/
+
+# IDE
+.idea/
+
+# Coverage
+.coverage
+htmlcov/
+

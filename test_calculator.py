@@ -47,7 +47,7 @@ def test_divide_by_zero_raises():
         calc.divide()
 
 def test_constructor_casts_to_float():
-    # Opcjonalne: jeśli konstruktor rzutuje stringi na float
+    # In case when constructor casts to float
     calc = Calculator(1, "2")
     assert pytest.approx(calc.sum(), rel=1e-12) == 3.0
 
