@@ -28,3 +28,11 @@ class Calculator:
         if self.__op2 == 0:
             raise ZeroDivisionError("Nie można dzielić przez zero.")
         return self.__op1 / self.__op2
+
+if __name__ == "__main__":
+    calc = Calculator(10, 5)
+
+    print("Sum:", calc.sum())
+    print("Subtract:", calc.subtract())
+    print("Multiply:", calc.multiply())
+    print("Divide:", calc.divide())
