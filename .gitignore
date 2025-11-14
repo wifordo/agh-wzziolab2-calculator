@@ -357,3 +357,16 @@ venv/
 .coverage
 htmlcov/
 
+
+# Ignore virtualenvs and IDE files
+.venv/
+venv/
+# IDE
+.idea/
+# Python compiled
+__pycache__/
+*.py[cod]
+# Coverage
+.coverage
+htmlcov/
+
